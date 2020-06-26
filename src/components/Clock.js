@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Clock.css";
 
-class Clock3 extends Component {
+class Clock extends Component {
   constructor() {
     super();
     this.setClock = this.setClock.bind(this);
@@ -53,4 +53,4 @@ class Clock3 extends Component {
   }
 }
 
-export default Clock3;
+export default Clock;
