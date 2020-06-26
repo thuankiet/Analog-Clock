@@ -1,0 +1,144 @@
+.clock {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle at 50%,
+    #333,
+    #333 57%,
+    #eee 60%,
+    #333 64%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face {
+  width: 325px;
+  height: 325px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+}
+
+.number {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  color: #444;
+  font-size: 27px;
+  transform: rotate(var(--rotation));
+}
+
+.number1 {
+  --rotation: 30deg;
+}
+._1 {
+  transform: rotate(-30deg);
+}
+.number2 {
+  --rotation: 60deg;
+}
+._2 {
+  transform: rotate(-60deg);
+}
+.number3 {
+  --rotation: 90deg;
+}
+._3 {
+  transform: rotate(-90deg);
+}
+.number4 {
+  --rotation: 120deg;
+}
+._4 {
+  transform: rotate(-120deg);
+}
+.number5 {
+  --rotation: 150deg;
+}
+._5 {
+  transform: rotate(-150deg);
+}
+.number6 {
+  --rotation: 180deg;
+}
+._6 {
+  transform: rotate(-180deg);
+}
+.number7 {
+  --rotation: 210deg;
+}
+._7 {
+  transform: rotate(-210deg);
+}
+.number8 {
+  --rotation: 240deg;
+}
+._8 {
+  transform: rotate(-240deg);
+}
+.number9 {
+  --rotation: 270deg;
+}
+._9 {
+  transform: rotate(-270deg);
+}
+.number10 {
+  --rotation: 300deg;
+}
+._10 {
+  transform: rotate(-300deg);
+}
+.number11 {
+  --rotation: 330deg;
+}
+._11 {
+  transform: rotate(-330deg);
+}
+.number12 {
+  --rotation: 360deg;
+}
+
+.dot {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #333;
+  transform: translate(-50%, 50%);
+}
+
+.hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: #333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  z-index: 2;
+}
+
+.hand.second {
+  width: 3px;
+  height: 47%;
+  background-color: #333;
+}
+
+.hand.minute {
+  width: 12px;
+  height: 43%;
+  background-color: #333;
+}
+
+.hand.hour {
+  width: 12px;
+  height: 30%;
+  background-color: #333;
+}
