@@ -10,7 +10,9 @@ class Clock extends Component {
     this.minuteRef = React.createRef();
     this.hourRef = React.createRef();
   }
+
   componentDidMount() {
+    this.setClock();
     setInterval(this.setClock, 1000);
   }
 
